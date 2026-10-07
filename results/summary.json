@@ -1,0 +1,149 @@
+{
+ "1000000": {
+  "to_sql_default": {
+   "reps": 5,
+   "median_s": 14.196,
+   "min_s": 13.874,
+   "max_s": 14.727,
+   "rows_per_s": 70442,
+   "median_mb": 726,
+   "min_mb": 555.8,
+   "max_mb": 830.0,
+   "all_verified": true
+  },
+  "to_sql_multi": {
+   "reps": 5,
+   "median_s": 61.016,
+   "min_s": 60.098,
+   "max_s": 66.278,
+   "rows_per_s": 16389,
+   "median_mb": 266,
+   "min_mb": 260.6,
+   "max_mb": 268.8,
+   "all_verified": true
+  },
+  "psycopg_executemany": {
+   "reps": 5,
+   "median_s": 13.986,
+   "min_s": 13.841,
+   "max_s": 14.42,
+   "rows_per_s": 71500,
+   "median_mb": 340,
+   "min_mb": 213.9,
+   "max_mb": 385.9,
+   "all_verified": true
+  },
+  "psycopg_copy_rows": {
+   "reps": 5,
+   "median_s": 2.86,
+   "min_s": 2.789,
+   "max_s": 2.872,
+   "rows_per_s": 349650,
+   "median_mb": 3,
+   "min_mb": 3.0,
+   "max_mb": 3.1,
+   "all_verified": true
+  },
+  "copy_csv": {
+   "reps": 5,
+   "median_s": 2.016,
+   "min_s": 1.936,
+   "max_s": 2.044,
+   "rows_per_s": 496032,
+   "median_mb": 53,
+   "min_mb": 38.2,
+   "max_mb": 71.5,
+   "all_verified": true
+  },
+  "adbc_ingest": {
+   "reps": 5,
+   "median_s": 0.75,
+   "min_s": 0.703,
+   "max_s": 0.821,
+   "rows_per_s": 1333333,
+   "median_mb": 69,
+   "min_mb": 43.0,
+   "max_mb": 92.5,
+   "all_verified": true
+  },
+  "polars_adbc": {
+   "reps": 5,
+   "median_s": 0.785,
+   "min_s": 0.744,
+   "max_s": 0.827,
+   "rows_per_s": 1273885,
+   "median_mb": 123,
+   "min_mb": 121.5,
+   "max_mb": 123.3,
+   "all_verified": true
+  },
+  "duckdb_postgres": {
+   "reps": 5,
+   "median_s": 0.691,
+   "min_s": 0.641,
+   "max_s": 0.9,
+   "rows_per_s": 1447178,
+   "median_mb": 108,
+   "min_mb": 107.3,
+   "max_mb": 107.9,
+   "all_verified": true
+  }
+ },
+ "10000000": {
+  "psycopg_copy_rows": {
+   "reps": 2,
+   "median_s": 28.703,
+   "min_s": 28.328,
+   "max_s": 29.079,
+   "rows_per_s": 348390,
+   "median_mb": 39,
+   "min_mb": 31.6,
+   "max_mb": 46.2,
+   "all_verified": true
+  },
+  "copy_csv": {
+   "reps": 2,
+   "median_s": 21.135,
+   "min_s": 21.051,
+   "max_s": 21.219,
+   "rows_per_s": 473149,
+   "median_mb": 230,
+   "min_mb": 169.1,
+   "max_mb": 290.8,
+   "all_verified": true
+  },
+  "adbc_ingest": {
+   "reps": 2,
+   "median_s": 7.145,
+   "min_s": 7.039,
+   "max_s": 7.251,
+   "rows_per_s": 1399580,
+   "median_mb": 477,
+   "min_mb": 459.4,
+   "max_mb": 494.6,
+   "all_verified": true
+  },
+  "polars_adbc": {
+   "reps": 2,
+   "median_s": 11.254,
+   "min_s": 8.813,
+   "max_s": 13.694,
+   "rows_per_s": 888612,
+   "median_mb": 932,
+   "min_mb": 528.8,
+   "max_mb": 1334.4,
+   "all_verified": true
+  },
+  "duckdb_postgres": {
+   "reps": 2,
+   "median_s": 8.684,
+   "min_s": 7.895,
+   "max_s": 9.474,
+   "rows_per_s": 1151477,
+   "median_mb": 688,
+   "min_mb": 615.5,
+   "max_mb": 760.3,
+   "all_verified": true
+  }
+ }
+}

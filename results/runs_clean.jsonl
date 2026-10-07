@@ -1,0 +1,8 @@
+{"method": "to_sql_default", "n": 1000000, "rep": 6, "seconds": 13.995, "rows_per_s": 71456, "extra_peak_mb": 648.6, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
+{"method": "to_sql_multi", "n": 1000000, "rep": 6, "seconds": 63.709, "rows_per_s": 15696, "extra_peak_mb": 265.1, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
+{"method": "psycopg_executemany", "n": 1000000, "rep": 6, "seconds": 14.7, "rows_per_s": 68029, "extra_peak_mb": 354.0, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
+{"method": "psycopg_copy_rows", "n": 1000000, "rep": 6, "seconds": 2.84, "rows_per_s": 352146, "extra_peak_mb": 0.1, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
+{"method": "copy_csv", "n": 1000000, "rep": 6, "seconds": 1.938, "rows_per_s": 515942, "extra_peak_mb": 64.0, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
+{"method": "adbc_ingest", "n": 1000000, "rep": 6, "seconds": 0.734, "rows_per_s": 1361544, "extra_peak_mb": 12.5, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
+{"method": "polars_adbc", "n": 1000000, "rep": 6, "seconds": 0.74, "rows_per_s": 1351503, "extra_peak_mb": 95.7, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
+{"method": "duckdb_postgres", "n": 1000000, "rep": 6, "seconds": 0.652, "rows_per_s": 1534913, "extra_peak_mb": 107.7, "count_ok": true, "sum_id_ok": true, "nulls": 0, "amount_ok": true}
