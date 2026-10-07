@@ -1,0 +1,34 @@
+{"exp": "chunks", "method": "multi", "chunksize": 100, "n": 200000, "rep": 1, "seconds": 12.635, "extra_mb": 43.6, "ok": true}
+{"exp": "chunks", "method": "multi", "chunksize": 1000, "n": 200000, "rep": 1, "seconds": 12.24, "extra_mb": 67.5, "ok": true}
+{"exp": "chunks", "method": "multi", "chunksize": 5000, "n": 200000, "rep": 1, "seconds": 13.739, "extra_mb": 86.9, "ok": true}
+{"exp": "chunks", "method": "multi", "chunksize": 9000, "n": 200000, "rep": 1, "seconds": 14.122, "extra_mb": 77.1, "ok": true}
+{"exp": "chunks", "method": "default", "chunksize": null, "n": 200000, "rep": 1, "seconds": 2.712, "extra_mb": 179.4, "ok": true}
+{"exp": "chunks", "method": "default", "chunksize": 10000, "n": 200000, "rep": 1, "seconds": 2.656, "extra_mb": 30.6, "ok": true}
+{"exp": "chunks", "method": "multi", "chunksize": 100, "n": 200000, "rep": 2, "seconds": 12.117, "extra_mb": 17.3, "ok": true}
+{"exp": "chunks", "method": "multi", "chunksize": 1000, "n": 200000, "rep": 2, "seconds": 12.977, "extra_mb": 25.3, "ok": true}
+{"exp": "chunks", "method": "multi", "chunksize": 5000, "n": 200000, "rep": 2, "seconds": 13.354, "extra_mb": 46.3, "ok": true}
+{"exp": "chunks", "method": "multi", "chunksize": 9000, "n": 200000, "rep": 2, "seconds": 15.111, "extra_mb": 71.0, "ok": true}
+{"exp": "chunks", "method": "default", "chunksize": null, "n": 200000, "rep": 2, "seconds": 2.76, "extra_mb": 144.1, "ok": true}
+{"exp": "chunks", "method": "default", "chunksize": 10000, "n": 200000, "rep": 2, "seconds": 2.592, "extra_mb": 12.0, "ok": true}
+{"exp": "indexes", "method": "to_sql_default", "table": "no indexes", "n": 1000000, "rep": 1, "seconds": 15.125, "extra_mb": 600.7, "ok": true}
+{"exp": "indexes", "method": "to_sql_default", "table": "pk + 2 indexes", "n": 1000000, "rep": 1, "seconds": 20.363, "extra_mb": 604.6, "ok": true}
+{"exp": "indexes", "method": "copy_csv", "table": "no indexes", "n": 1000000, "rep": 1, "seconds": 2.175, "extra_mb": 178.6, "ok": true}
+{"exp": "indexes", "method": "copy_csv", "table": "pk + 2 indexes", "n": 1000000, "rep": 1, "seconds": 5.717, "extra_mb": 186.0, "ok": true}
+{"exp": "indexes", "method": "adbc_ingest", "table": "no indexes", "n": 1000000, "rep": 1, "seconds": 0.779, "extra_mb": 144.7, "ok": true}
+{"exp": "indexes", "method": "adbc_ingest", "table": "pk + 2 indexes", "n": 1000000, "rep": 1, "seconds": 4.564, "extra_mb": 114.7, "ok": true}
+{"exp": "indexes", "method": "duckdb_postgres", "table": "no indexes", "n": 1000000, "rep": 1, "seconds": 0.678, "extra_mb": 139.4, "ok": true}
+{"exp": "indexes", "method": "duckdb_postgres", "table": "pk + 2 indexes", "n": 1000000, "rep": 1, "seconds": 4.232, "extra_mb": 99.1, "ok": true}
+{"exp": "indexes", "method": "psycopg_copy_rows", "table": "no indexes", "n": 1000000, "rep": 1, "seconds": 2.923, "extra_mb": 2.0, "ok": true}
+{"exp": "indexes", "method": "psycopg_copy_rows", "table": "pk + 2 indexes", "n": 1000000, "rep": 1, "seconds": 4.0, "extra_mb": 6.8, "ok": true}
+{"exp": "indexes", "method": "to_sql_default", "table": "no indexes", "n": 1000000, "rep": 2, "seconds": 14.928, "extra_mb": 886.3, "ok": true}
+{"exp": "indexes", "method": "to_sql_default", "table": "pk + 2 indexes", "n": 1000000, "rep": 2, "seconds": 14.037, "extra_mb": 867.3, "ok": true}
+{"exp": "indexes", "method": "copy_csv", "table": "no indexes", "n": 1000000, "rep": 2, "seconds": 2.016, "extra_mb": 197.3, "ok": true}
+{"exp": "indexes", "method": "copy_csv", "table": "pk + 2 indexes", "n": 1000000, "rep": 2, "seconds": 5.665, "extra_mb": 17.4, "ok": true}
+{"exp": "indexes", "method": "adbc_ingest", "table": "no indexes", "n": 1000000, "rep": 2, "seconds": 0.748, "extra_mb": 154.6, "ok": true}
+{"exp": "indexes", "method": "adbc_ingest", "table": "pk + 2 indexes", "n": 1000000, "rep": 2, "seconds": 3.883, "extra_mb": 111.9, "ok": true}
+{"exp": "indexes", "method": "duckdb_postgres", "table": "no indexes", "n": 1000000, "rep": 2, "seconds": 0.673, "extra_mb": 153.5, "ok": true}
+{"exp": "indexes", "method": "duckdb_postgres", "table": "pk + 2 indexes", "n": 1000000, "rep": 2, "seconds": 3.714, "extra_mb": 83.3, "ok": true}
+{"exp": "indexes", "method": "psycopg_copy_rows", "table": "no indexes", "n": 1000000, "rep": 2, "seconds": 2.763, "extra_mb": 7.3, "ok": true}
+{"exp": "indexes", "method": "psycopg_copy_rows", "table": "pk + 2 indexes", "n": 1000000, "rep": 2, "seconds": 3.935, "extra_mb": 1.3, "ok": true}
+{"exp": "load_then_index", "method": "adbc_ingest", "n": 1000000, "rep": 1, "load_s": 0.894, "index_s": 0.644, "total_s": 1.538}
+{"exp": "load_then_index", "method": "adbc_ingest", "n": 1000000, "rep": 2, "load_s": 0.751, "index_s": 0.605, "total_s": 1.356}

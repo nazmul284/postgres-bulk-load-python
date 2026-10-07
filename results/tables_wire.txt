@@ -1,0 +1,12 @@
+What each method sends to Postgres for 1,000 rows (from the server log)
+
+method                    statements  wire format           
+-----------------------   ----------  --------------------  
+pandas to_sql()                1,000  INSERT per row        
+psycopg executemany            1,000  INSERT per row        
+to_sql(method='multi')             1  INSERT, 7,000 params  
+psycopg COPY write_row             1  COPY, text            
+COPY from to_csv buffer            1  COPY, CSV             
+ADBC adbc_ingest                   1  COPY, binary          
+Polars write_database              1  COPY, binary          
+DuckDB postgres ext                1  COPY, binary          

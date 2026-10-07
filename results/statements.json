@@ -1,0 +1,11 @@
+{
+ "_how": "Captured with log_statement='all' while each method loaded 1,000 rows (harness/what_is_sent.py). Statements copied verbatim from the Postgres log, shortened.",
+ "to_sql_default": "1,000 x INSERT INTO events (...) VALUES ($1, ..., $7), pipelined by psycopg",
+ "to_sql_multi": "1 x INSERT ... VALUES ($1::BIGINT, $2::TIMESTAMP ..., $7), ($8::BIGINT, ...) per chunk: 7,000 placeholders per 1,000 rows",
+ "psycopg_executemany": "1,000 x INSERT INTO events (...) VALUES ($1, ..., $7), pipelined",
+ "psycopg_copy_rows": "COPY events (...) FROM STDIN (text format)",
+ "copy_csv": "COPY events (...) FROM STDIN WITH (FORMAT csv)",
+ "adbc_ingest": "COPY \"public\".\"events\" (...) FROM STDIN WITH (FORMAT binary)",
+ "polars_adbc": "COPY \"public\".\"events\" (...) FROM STDIN WITH (FORMAT binary)",
+ "duckdb_postgres": "COPY \"public\".\"events\" FROM STDIN (FORMAT BINARY)"
+}

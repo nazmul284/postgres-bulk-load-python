@@ -1,0 +1,22 @@
+to_sql chunksize sweep, 200,000 rows (2 runs: median seconds, max extra MB)
+
+method                  chunksize   seconds  extra MB
+---------------------   ---------   -------  --------
+method='multi'                100     12.38        44
+method='multi'               1000     12.61        68
+method='multi'               5000     13.55        87
+method='multi'               9000     14.62        77
+default                      None      2.74       179
+default                     10000      2.62        31
+
+
+Same 1M rows into a table with a primary key and two indexes (median of 2, seconds)
+
+method                      no indexes  pk + 2 idx  slowdown
+-------------------------   ----------  ----------  --------
+DuckDB postgres ext               0.68        3.97      5.9x
+ADBC adbc_ingest                  0.76        4.22      5.5x
+psycopg COPY write_row            2.84        3.97      1.4x
+COPY from to_csv buffer           2.10        5.69      2.7x
+pandas to_sql()                  15.03       17.20      1.1x
+ADBC, then build indexes                      1.45

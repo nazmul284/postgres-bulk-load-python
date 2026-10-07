@@ -1,0 +1,37 @@
+== to_sql_default: 1012 statements logged
+    1000x  INSERT INTO events (id, created_at, user_id, amount, category, note, i
+       2x  BEGIN
+       1x  select pg_catalog.version()
+       1x  select current_schema()
+== to_sql_multi: 13 statements logged
+       2x  BEGIN
+       1x  select pg_catalog.version()
+       1x  select current_schema()
+       1x  show transaction isolation level
+== psycopg_executemany: 1002 statements logged
+    1000x  INSERT INTO events (id,created_at,user_id,amount,category,note,is_acti
+       1x  BEGIN
+       1x  COMMIT
+== psycopg_copy_rows: 3 statements logged
+       1x  BEGIN
+       1x  COPY events (id,created_at,user_id,amount,category,note,is_active) FRO
+       1x  COMMIT
+== copy_csv: 3 statements logged
+       1x  BEGIN
+       1x  COPY events (id,created_at,user_id,amount,category,note,is_active) FRO
+       1x  COMMIT
+== adbc_ingest: 10 statements logged
+       3x  SELECT oid, typname, typreceive, typbasetype, typrelid, typarray FROM 
+       1x  SELECT version();
+       1x  
+       1x  BEGIN TRANSACTION
+== polars_adbc: 11 statements logged
+       3x  SELECT oid, typname, typreceive, typbasetype, typrelid, typarray FROM 
+       1x  SELECT version();
+       1x  
+       1x  BEGIN TRANSACTION
+== duckdb_postgres: 13 statements logged
+       5x  SELECT 1
+       3x  DISCARD ALL
+       1x  SELECT version(), (SELECT COUNT(*) FROM pg_settings WHERE name LIKE 'r
+       1x  SELECT to_regclass('..')
